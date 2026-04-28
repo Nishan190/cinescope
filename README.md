@@ -1,39 +1,53 @@
 # 🎬 CineScope - Professional Movie Review Platform
 
-A full-featured movie review website with user authentication, CRUD operations, search, activity logging, and preferences.
+[![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-orange.svg)](https://mysql.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen.svg)]()
+
+A fully-featured, professional movie review website with user authentication, CRUD operations, search functionality, activity logging, and theme preferences. Built with PHP, MySQL, HTML5, CSS3, and JavaScript.
 
 ## ✨ Features Implemented
 
-| # | Feature | Status |
-|---|---------|--------|
-| 1 | Login/Logout System | ✅ |
-| 2 | Item Search Mechanism | ✅ |
-| 3 | Item Entry, Update, Delete | ✅ |
-| 4 | Fully Responsive Design | ✅ |
-| 5 | Session Handling | ✅ |
-| 6 | Database Connectivity & CRUD | ✅ |
-| 7 | Password Change | ✅ |
-| 8 | Activity Log Maintenance | ✅ |
-| 9 | Preference Setting (Theme) | ✅ |
+| # | Feature | Status | Description |
+|---|---------|--------|-------------|
+| 1 | **Login/Logout System** | ✅ | Secure authentication with password hashing (bcrypt) |
+| 2 | **Item Search Mechanism** | ✅ | Real-time search by title, genre, or reviewer |
+| 3 | **Item Entry, Update, Delete** | ✅ | Full CRUD operations for movie reviews |
+| 4 | **Fully Responsive Design** | ✅ | Works on desktop, tablet, and mobile devices |
+| 5 | **Session Handling** | ✅ | PHP sessions for persistent user state |
+| 6 | **Database Connectivity** | ✅ | MySQL with PDO for secure database operations |
+| 7 | **Password Change** | ✅ | Users can change their password securely |
+| 8 | **Activity Log Maintenance** | ✅ | Tracks all user actions (login, logout, CRUD, etc.) |
+| 9 | **Preference Setting** | ✅ | Light/Dark mode theme preference saved to database |
 
-## 🚀 Installation Guide
+## 🚀 Quick Installation Guide
 
-### Step 1: Setup Web Server
-- **XAMPP**: Copy `cinescope/` to `C:\xampp\htdocs\`
-- **WAMP**: Copy to `C:\wamp64\www\`
-- **MAMP**: Copy to `/Applications/MAMP/htdocs/`
+### Prerequisites
 
-### Step 2: Create Database
-1. Open phpMyAdmin: `http://localhost/phpmyadmin`
-2. Click "New" → Create database `movie_review_db`
-3. Go to "SQL" tab
-4. Copy and paste contents of `database/schema.sql`
-5. Click "Go"
+- **Web Server:** XAMPP / WAMP / MAMP / Laragon
+- **PHP:** Version 7.4 or higher
+- **MySQL:** Version 5.7 or higher
+- **Browser:** Modern browser with JavaScript enabled
 
-### Step 3: Configure Database
-Edit `includes/config.php`:
-```php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'movie_review_db');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+### Step-by-Step Installation
+
+#### 1. Download & Install XAMPP
+
+Download XAMPP from [https://www.apachefriends.org/](https://www.apachefriends.org/)
+
+Install with default settings.
+
+#### 2. Create Project Folder
+
+Navigate to XAMPP's htdocs folder and create a new folder:
+
+```bash
+# For XAMPP
+C:\xampp\htdocs\cinescope\
+
+# For WAMP
+C:\wamp64\www\cinescope\
+
+# For MAMP
+/Applications/MAMP/htdocs/cinescope/
